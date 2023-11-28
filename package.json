@@ -1,0 +1,26 @@
+{
+  "name": "modpack-manager-v",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.6.1",
+    "axios": "^1.6.2",
+    "dayjs": "^1.11.10",
+    "less": "^4.2.0",
+    "pinia": "^2.1.7",
+    "vue": "^3.3.9"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",
+    "typescript": "^5.3.2",
+    "vite": "^4.5.0",
+    "vite-plugin-monkey": "^3.5.0",
+    "vue-tsc": "^1.8.22"
+  }
+}
