@@ -1,61 +1,53 @@
 <script setup lang="ts">
-import {computed, onBeforeMount, onMounted, ref} from 'vue';
+import {computed, onMounted, ref} from 'vue';
 import Row from '../avc/Row.vue';
 import ModpackEditor from './ModpackEditor.vue';
-import SelectDropdown from './SelectDropdown.vue';
+import SelectDropdown, {SelectDropdownItem} from './SelectDropdown.vue';
 import ModList from './ModList.vue';
 import Modpack from '../../domains/Modpack';
-import {useModpackStore} from '../../stores/ModpackStore';
+import {useManagerStore} from '../../stores/ManagerStore';
 
-const modpackStore = useModpackStore();
+const managerStore = useManagerStore();
 
 const showModpackEditor = ref(true);
 
 onMounted(async () => {
-  await modpackStore.load();
-  const amount = modpackStore.modpacks.size;
+  await managerStore.load();
+  const amount = managerStore.modpacks.length;
   if (amount > 0) {
     showModpackEditor.value = false;
   }
 });
 
-const modpackOptions = computed(() => modpackStore.modpackOptions);
+const modpackItems = computed(() => {
+  const items: SelectDropdownItem[] = [];
+  managerStore.modpacks.forEach((mp) => items.push({
+    value: mp.id,
+    text: mp.name,
+  } as SelectDropdownItem));
+  return items;
+});
 
 const modpackId = computed<string>({
   get() {
-    return modpackStore.modpackId;
+    return managerStore.modpackId;
   },
   set(value) {
-    modpackStore.updateModpackId(value);
+    managerStore.updateModpackId(value);
   },
-});
-
-const modpack = computed(() => {
-  if (modpackId.value != undefined) {
-    return undefined;
-  }
-  return modpackStore.modpacks.get(modpackId.value!);
 });
 
 const mods = computed(() => {
-  if (modpackId.value == undefined) {
+  if (managerStore.modpack == undefined) {
     return [];
   }
-  // return modpack.value.mods;
-  return [
-    {
-      id: "jei",
-      source: "curseforge",
-      slug: "jei",
-      version: undefined,
-    }
-  ];
+  return managerStore.modpack.mods;
 });
 
 function saveModpack(modpack: Modpack) {
   console.debug(`正在保存Modpack：`, modpack);
-  modpackStore.updateModpack(modpack);
-  modpackStore.updateModpackId(modpack.id);
+  managerStore.updateModpack(modpack);
+  managerStore.updateModpackId(modpack.id);
   showModpackEditor.value = false;
 }
 
@@ -86,13 +78,13 @@ function onSettingClick() {
     <div class="modpack-selector" v-show="!showModpackEditor">
       <select-dropdown
         name="整合包："
-        :options="modpackOptions"
+        :items="modpackItems"
         v-model="modpackId"
       />
-      <row class="row-details" justify="center" v-if="modpack != undefined">
+      <row class="row-details" justify="center" v-if="managerStore.modpack != undefined">
         <ul class="details-list">
-          <li class="detail-game-version">{{ modpack.gameVersion }}</li>
-          <li class="detail-flavor">{{ modpack.modLoader }}</li>
+          <li class="detail-game-version">{{ managerStore.modpack.gameVersion }}</li>
+          <li class="detail-flavor">{{ managerStore.modpack.modLoader }}</li>
         </ul>
       </row>
       <row class="row-buttons" justify="space-around">

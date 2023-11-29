@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {onMounted, ref} from 'vue';
 import SearchResult from './SearchResult.vue';
-import Mod from '../../clients/curseforge/schema/Mod';
+import Mod from '../../clients/curseforge/messages/Mod';
 
 const mods = ref<Mod[]>([]);
 
@@ -10,1172 +10,1396 @@ onMounted(() => {
     "data": [
       {
         "id": 238222,
-        "gameId": 432,
-        "name": "Just Enough Items (JEI)",
-        "slug": "jei",
-        "links": {
-          "websiteUrl": "https://www.curseforge.com/minecraft/mc-mods/jei",
-          "wikiUrl": "",
-          "issuesUrl": "https://github.com/mezz/JustEnoughItems/issues?q=is%3Aissue",
-          "sourceUrl": "https://github.com/mezz/JustEnoughItems"
+        "author": {
+          "id": 17072262,
+          "name": "mezz",
+          "username": "mezz",
+          "isEarlyAccessAuthor": false
         },
-        "summary": "View Items and Recipes",
-        "status": 4,
-        "downloadCount": 263784313,
-        "isFeatured": false,
-        "primaryCategoryId": 423,
+        "avatarUrl": "https://media.forgecdn.net/avatars/29/69/635838945588716414.jpeg",
         "categories": [
           {
-            "id": 423,
+            "id": 421,
+            "dateModified": "2014-05-23T03:21:44.06Z",
             "gameId": 432,
+            "iconUrl": "https://media.forgecdn.net/avatars/6/36/635351496947765531.png",
+            "name": "API and Library",
+            "slug": "library-api",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/library-api",
+            "classId": 6,
+            "isClass": false,
+            "parentCategoryId": 6
+          },
+          {
+            "id": 423,
+            "dateModified": "2014-05-08T17:42:23.74Z",
+            "gameId": 432,
+            "iconUrl": "https://media.forgecdn.net/avatars/6/38/635351497437388438.png",
             "name": "Map and Information",
             "slug": "map-information",
             "url": "https://www.curseforge.com/minecraft/mc-mods/map-information",
-            "iconUrl": "https://media.forgecdn.net/avatars/6/38/635351497437388438.png",
-            "dateModified": "2014-05-08T17:42:23.74Z",
-            "isClass": false,
             "classId": 6,
+            "isClass": false,
+            "parentCategoryId": 6
+          }
+        ],
+        "class": {
+          "id": 6,
+          "dateModified": "2023-08-05T12:43:53.26Z",
+          "gameId": 432,
+          "iconUrl": "https://media.forgecdn.net/avatars/52/101/636111139584399357.png",
+          "name": "Mods",
+          "slug": "mc-mods",
+          "url": "https://www.curseforge.com/minecraft/mc-mods",
+          "classId": null,
+          "displayIndex": 1,
+          "isClass": true,
+          "parentCategoryId": null
+        },
+        "creationDate": 1448319358,
+        "downloads": 270567874,
+        "gameVersion": "1.18.2",
+        "name": "Just Enough Items (JEI)",
+        "slug": "jei",
+        "summary": "View Items and Recipes",
+        "updateDate": 1695591189,
+        "releaseDate": 1695590832,
+        "fileSize": 1085640,
+        "isClientCompatible": true,
+        "latestFileDetails": {
+          "id": 4593548,
+          "gameVersions": [
+            "Forge",
+            "Java 17",
+            "1.18.2"
+          ],
+          "gameVersionTypeIds": [
+            73250
+          ]
+        },
+        "hasEarlyAccessFiles": false,
+        "hasLocalization": false,
+        "status": 4,
+        "websiteRecentFiles": [
+          {
+            "gameVersion": {
+              "id": 75125,
+              "name": "Minecraft 1.20"
+            },
+            "files": [
+              {
+                "fileName": "jei-1.20.2-forge-16.0.0.28.jar",
+                "id": 4767571,
+                "dateCreated": "2023-09-24T21:27:12.143Z",
+                "dateModified": "2023-09-24T21:33:09.57Z",
+                "displayName": "jei-1.20.2-forge-16.0.0.28.jar",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.20.2",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  75125,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "jei-1.20.2-fabric-16.0.0.28.jar",
+                "id": 4767570,
+                "dateCreated": "2023-09-24T21:26:55.9Z",
+                "dateModified": "2023-09-24T21:32:46.18Z",
+                "displayName": "jei-1.20.2-fabric-16.0.0.28.jar",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.20.2",
+                  "Fabric"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  75125,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "jei-1.20.1-forge-15.2.0.27.jar",
+                "id": 4712868,
+                "dateCreated": "2023-08-19T21:53:48.3Z",
+                "dateModified": "2023-08-19T22:04:12.087Z",
+                "displayName": "jei-1.20.1-forge-15.2.0.27.jar",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.20.1",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  75125,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          },
+          {
+            "gameVersion": {
+              "id": 73407,
+              "name": "Minecraft 1.19"
+            },
+            "files": [
+              {
+                "fileName": "jei-1.19.4-forge-13.1.0.16.jar",
+                "id": 4712556,
+                "dateCreated": "2023-08-19T18:05:09.833Z",
+                "dateModified": "2023-08-19T18:12:54.82Z",
+                "displayName": "jei-1.19.4-forge-13.1.0.16.jar",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.19.4",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "jei-1.19.4-fabric-13.1.0.16.jar",
+                "id": 4712553,
+                "dateCreated": "2023-08-19T18:04:51.59Z",
+                "dateModified": "2023-08-19T18:12:56.973Z",
+                "displayName": "jei-1.19.4-fabric-13.1.0.16.jar",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.19.4",
+                  "Fabric"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "jei-1.19.3-forge-12.4.0.22.jar",
+                "id": 4455246,
+                "dateCreated": "2023-03-24T17:31:26.113Z",
+                "dateModified": "2023-03-24T17:31:26.113Z",
+                "displayName": "jei-1.19.3-forge-12.4.0.22.jar",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.19.3",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          },
+          {
+            "gameVersion": {
+              "id": 73250,
+              "name": "Minecraft 1.18"
+            },
+            "files": [
+              {
+                "fileName": "jei-1.18.2-forge-10.2.1.1005.jar",
+                "id": 4593548,
+                "dateCreated": "2023-06-17T18:36:36.233Z",
+                "dateModified": "2023-06-26T02:06:54.017Z",
+                "displayName": "jei-1.18.2-forge-10.2.1.1005.jar",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.18.2",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73250,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "jei-1.18.2-fabric-10.2.1.1005.jar",
+                "id": 4593546,
+                "dateCreated": "2023-06-17T18:36:22.367Z",
+                "dateModified": "2023-06-17T18:36:22.367Z",
+                "displayName": "jei-1.18.2-fabric-10.2.1.1005.jar",
+                "releaseType": 2,
+                "gameVersions": [
+                  "Fabric",
+                  "1.18.2"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  68441,
+                  73250
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "jei-1.18.1-9.4.1.276.jar",
+                "id": 4060769,
+                "dateCreated": "2022-11-01T00:43:30.177Z",
+                "dateModified": "2022-11-01T00:43:30.177Z",
+                "displayName": "jei-1.18.1-9.4.1.276.jar",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.18.1",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73250,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 756990,
+        "author": {
+          "id": 102561807,
+          "name": "Anxxitty__",
+          "username": "Anxxitty__",
+          "isEarlyAccessAuthor": false
+        },
+        "avatarUrl": "https://media.forgecdn.net/avatars/698/128/638070827047320896.png",
+        "categories": [
+          {
+            "id": 423,
+            "dateModified": "2014-05-08T17:42:23.74Z",
+            "gameId": 432,
+            "iconUrl": "https://media.forgecdn.net/avatars/6/38/635351497437388438.png",
+            "name": "Map and Information",
+            "slug": "map-information",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/map-information",
+            "classId": 6,
+            "isClass": false,
             "parentCategoryId": 6
           },
           {
             "id": 421,
+            "dateModified": "2014-05-23T03:21:44.06Z",
             "gameId": 432,
+            "iconUrl": "https://media.forgecdn.net/avatars/6/36/635351496947765531.png",
             "name": "API and Library",
             "slug": "library-api",
             "url": "https://www.curseforge.com/minecraft/mc-mods/library-api",
-            "iconUrl": "https://media.forgecdn.net/avatars/6/36/635351496947765531.png",
-            "dateModified": "2014-05-23T03:21:44.06Z",
-            "isClass": false,
             "classId": 6,
+            "isClass": false,
             "parentCategoryId": 6
           }
         ],
-        "classId": 6,
-        "authors": [
-          {
-            "id": 17072262,
-            "name": "mezz",
-            "url": "https://www.curseforge.com/members/17072262-mezz?username=mezz"
-          }
-        ],
-        "logo": {
-          "id": 29069,
-          "modId": 238222,
-          "title": "635838945588716414.jpeg",
-          "description": "",
-          "thumbnailUrl": "https://media.forgecdn.net/avatars/thumbnails/29/69/256/256/635838945588716414.jpeg",
-          "url": "https://media.forgecdn.net/avatars/29/69/635838945588716414.jpeg"
+        "class": {
+          "id": 6,
+          "dateModified": "2023-08-05T12:43:53.26Z",
+          "gameId": 432,
+          "iconUrl": "https://media.forgecdn.net/avatars/52/101/636111139584399357.png",
+          "name": "Mods",
+          "slug": "mc-mods",
+          "url": "https://www.curseforge.com/minecraft/mc-mods",
+          "classId": null,
+          "displayIndex": 1,
+          "isClass": true,
+          "parentCategoryId": null
         },
-        "screenshots": [
+        "creationDate": 1671485904,
+        "downloads": 304946,
+        "gameVersion": "1.20.1",
+        "name": "Just Enough Farmer's Recipes",
+        "slug": "farmers-delight-jei-plugin",
+        "summary": "A JEI plugin that adds Farmer's Delight recipes.",
+        "updateDate": 1691326515,
+        "releaseDate": 1691326365,
+        "fileSize": 39786,
+        "isClientCompatible": true,
+        "latestFileDetails": {
+          "id": 4685186,
+          "gameVersions": [
+            "Fabric",
+            "Java 17",
+            "Java 18",
+            "Client",
+            "Server",
+            "1.20",
+            "1.20.1"
+          ],
+          "gameVersionTypeIds": [
+            75125,
+            75125
+          ]
+        },
+        "hasEarlyAccessFiles": false,
+        "hasLocalization": false,
+        "status": 4,
+        "websiteRecentFiles": [
           {
-            "id": 31417,
-            "modId": 238222,
-            "title": "Recipe Completion",
-            "description": "",
-            "thumbnailUrl": "https://media.forgecdn.net/attachments/thumbnails/31/417/310/172/thzzdin.png",
-            "url": "https://media.forgecdn.net/attachments/31/417/thzzdin.png"
-          },
-          {
-            "id": 31419,
-            "modId": 238222,
-            "title": "Potions",
-            "description": "",
-            "thumbnailUrl": "https://media.forgecdn.net/attachments/thumbnails/31/419/310/172/t7f7jh6.png",
-            "url": "https://media.forgecdn.net/attachments/31/419/t7f7jh6.png"
-          },
-          {
-            "id": 31420,
-            "modId": 238222,
-            "title": "Itemlist Edit Mode",
-            "description": "",
-            "thumbnailUrl": "https://media.forgecdn.net/attachments/thumbnails/31/420/310/172/tgafkma.png",
-            "url": "https://media.forgecdn.net/attachments/31/420/tgafkma.png"
-          },
-          {
-            "id": 31418,
-            "modId": 238222,
-            "title": "Big Screen Support",
-            "description": "",
-            "thumbnailUrl": "https://media.forgecdn.net/attachments/thumbnails/31/418/310/172/9lngh5f.png",
-            "url": "https://media.forgecdn.net/attachments/31/418/9lngh5f.png"
-          }
-        ],
-        "mainFileId": 4593548,
-        "latestFiles": [
-          {
-            "id": 3040523,
-            "gameId": 432,
-            "modId": 238222,
-            "isAvailable": true,
-            "displayName": "jei_1.12.2-4.16.1.301.jar",
-            "fileName": "jei_1.12.2-4.16.1.301.jar",
-            "releaseType": 1,
-            "fileStatus": 4,
-            "hashes": [
+            "gameVersion": {
+              "id": 75125,
+              "name": "Minecraft 1.20"
+            },
+            "files": [
               {
-                "value": "3045e8440ea44071d8b83c4e7b3c190348fdc527",
-                "algo": 1
-              },
-              {
-                "value": "1dee4be93d666e2228039c551e927b35",
-                "algo": 2
-              }
-            ],
-            "fileDate": "2020-08-24T01:01:39.123Z",
-            "fileLength": 653211,
-            "downloadCount": 11752168,
-            "downloadUrl": "https://edge.forgecdn.net/files/3040/523/jei_1.12.2-4.16.1.301.jar",
-            "gameVersions": [
-              "1.12.2"
-            ],
-            "sortableGameVersions": [
-              {
-                "gameVersionName": "1.12.2",
-                "gameVersionPadded": "0000000001.0000000012.0000000002",
-                "gameVersion": "1.12.2",
-                "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-                "gameVersionTypeId": 628
-              }
-            ],
-            "dependencies": [],
-            "alternateFileId": 0,
-            "isServerPack": false,
-            "fileFingerprint": 3089143260,
-            "modules": [
-              {
-                "name": "META-INF",
-                "fingerprint": 2236405288
-              },
-              {
-                "name": "mezz",
-                "fingerprint": 2222830911
-              },
-              {
-                "name": "pack.mcmeta",
-                "fingerprint": 1488642189
-              },
-              {
-                "name": "mcmod.info",
-                "fingerprint": 3528499262
-              },
-              {
-                "name": "assets",
-                "fingerprint": 9943101
+                "fileName": "JustEnoughFarmersRecipes-1.20.1-1.0.1.jar",
+                "id": 4685186,
+                "dateCreated": "2023-08-06T12:52:45.917Z",
+                "dateModified": "2023-08-06T12:55:15.447Z",
+                "displayName": "JustEnoughFarmersRecipes-1.20.1-1.0.1.jar",
+                "releaseType": 2,
+                "gameVersions": [
+                  "Fabric",
+                  "Client",
+                  "1.20.1",
+                  "1.20",
+                  "Server"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  68441,
+                  75208,
+                  75125
+                ],
+                "isEarlyAccessContent": false
               }
             ]
           },
           {
-            "id": 3272039,
-            "gameId": 432,
-            "modId": 238222,
-            "isAvailable": true,
-            "displayName": "jei-1.13.2-5.0.0.31.jar",
-            "fileName": "jei-1.13.2-5.0.0.31.jar",
-            "releaseType": 3,
-            "fileStatus": 4,
-            "hashes": [
+            "gameVersion": {
+              "id": 73407,
+              "name": "Minecraft 1.19"
+            },
+            "files": [
               {
-                "value": "aa15cdea079db8b91d75e3c68216df80a70545d8",
-                "algo": 1
-              },
-              {
-                "value": "1ee1f4fb4c6e199c02c7d15cbd0d2c8a",
-                "algo": 2
-              }
-            ],
-            "fileDate": "2021-04-11T03:49:47.687Z",
-            "fileLength": 690802,
-            "downloadCount": 8644,
-            "downloadUrl": "https://edge.forgecdn.net/files/3272/39/jei-1.13.2-5.0.0.31.jar",
-            "gameVersions": [
-              "1.13.2"
-            ],
-            "sortableGameVersions": [
-              {
-                "gameVersionName": "1.13.2",
-                "gameVersionPadded": "0000000001.0000000013.0000000002",
-                "gameVersion": "1.13.2",
-                "gameVersionReleaseDate": "2018-10-22T00:00:00Z",
-                "gameVersionTypeId": 55023
-              }
-            ],
-            "dependencies": [],
-            "alternateFileId": 0,
-            "isServerPack": false,
-            "fileFingerprint": 2700304635,
-            "modules": [
-              {
-                "name": "META-INF",
-                "fingerprint": 1102858494
-              },
-              {
-                "name": "mezz",
-                "fingerprint": 2811918946
-              },
-              {
-                "name": "pack.mcmeta",
-                "fingerprint": 3652707984
-              },
-              {
-                "name": "assets",
-                "fingerprint": 88833534
+                "fileName": "JustEnoughFarmersRecipes-1.19-1.0.1.jar",
+                "id": 4357825,
+                "dateCreated": "2023-01-21T16:07:08.043Z",
+                "dateModified": "2023-01-21T16:07:08.043Z",
+                "displayName": "JustEnoughFarmersRecipes-1.19-1.0.1.jar",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.19.3",
+                  "Fabric",
+                  "1.19.2",
+                  "1.19.1",
+                  "1.19"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
               }
             ]
           },
           {
-            "id": 4087656,
-            "gameId": 432,
-            "modId": 238222,
-            "isAvailable": true,
-            "displayName": "jei-1.19.2-fabric-11.4.0.286.jar",
-            "fileName": "jei-1.19.2-fabric-11.4.0.286.jar",
-            "releaseType": 3,
-            "fileStatus": 4,
-            "hashes": [
+            "gameVersion": {
+              "id": 73250,
+              "name": "Minecraft 1.18"
+            },
+            "files": [
               {
-                "value": "f4c77ecd8b897a12c2c8a26350d93a93322a8bcd",
-                "algo": 1
-              },
-              {
-                "value": "cbf23483d172a38b71419100e227f017",
-                "algo": 2
-              }
-            ],
-            "fileDate": "2022-11-15T02:14:24.907Z",
-            "fileLength": 1068892,
-            "downloadCount": 85246,
-            "downloadUrl": "https://edge.forgecdn.net/files/4087/656/jei-1.19.2-fabric-11.4.0.286.jar",
-            "gameVersions": [
-              "Fabric",
-              "1.19.2"
-            ],
-            "sortableGameVersions": [
-              {
-                "gameVersionName": "Fabric",
-                "gameVersionPadded": "0",
-                "gameVersion": "",
-                "gameVersionReleaseDate": "2022-09-01T00:00:00Z",
-                "gameVersionTypeId": 68441
-              },
-              {
-                "gameVersionName": "1.19.2",
-                "gameVersionPadded": "0000000001.0000000019.0000000002",
-                "gameVersion": "1.19.2",
-                "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
-                "gameVersionTypeId": 73407
-              }
-            ],
-            "dependencies": [],
-            "alternateFileId": 0,
-            "isServerPack": false,
-            "fileFingerprint": 1613607509,
-            "modules": [
-              {
-                "name": "META-INF",
-                "fingerprint": 2822576509
-              },
-              {
-                "name": "jei.accesswidener",
-                "fingerprint": 3441454662
-              },
-              {
-                "name": "assets",
-                "fingerprint": 224894697
-              },
-              {
-                "name": "fabric.mod.json",
-                "fingerprint": 1230897332
-              },
-              {
-                "name": "pack.mcmeta",
-                "fingerprint": 1550930300
-              },
-              {
-                "name": "jei.mixins.json",
-                "fingerprint": 623960849
-              },
-              {
-                "name": "jei-icon.png",
-                "fingerprint": 2007185424
-              },
-              {
-                "name": "jei-1.19.2-fabric-refmap.json",
-                "fingerprint": 1412800118
-              },
-              {
-                "name": "mezz",
-                "fingerprint": 2346665333
-              }
-            ]
-          },
-          {
-            "id": 4087658,
-            "gameId": 432,
-            "modId": 238222,
-            "isAvailable": true,
-            "displayName": "jei-1.19.2-forge-11.4.0.286.jar",
-            "fileName": "jei-1.19.2-forge-11.4.0.286.jar",
-            "releaseType": 3,
-            "fileStatus": 4,
-            "hashes": [
-              {
-                "value": "3bab715ae0f56e1b9a3e1ebfb5e9bb3f677e3711",
-                "algo": 1
-              },
-              {
-                "value": "0d458f02d611eafbf29ae36010d03130",
-                "algo": 2
-              }
-            ],
-            "fileDate": "2022-11-15T02:14:49.103Z",
-            "fileLength": 1046401,
-            "downloadCount": 628343,
-            "downloadUrl": "https://edge.forgecdn.net/files/4087/658/jei-1.19.2-forge-11.4.0.286.jar",
-            "gameVersions": [
-              "1.19.2",
-              "Forge"
-            ],
-            "sortableGameVersions": [
-              {
-                "gameVersionName": "1.19.2",
-                "gameVersionPadded": "0000000001.0000000019.0000000002",
-                "gameVersion": "1.19.2",
-                "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
-                "gameVersionTypeId": 73407
-              },
-              {
-                "gameVersionName": "Forge",
-                "gameVersionPadded": "0",
-                "gameVersion": "",
-                "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
-                "gameVersionTypeId": 68441
-              }
-            ],
-            "dependencies": [],
-            "alternateFileId": 0,
-            "isServerPack": false,
-            "fileFingerprint": 4135756105,
-            "modules": [
-              {
-                "name": "META-INF",
-                "fingerprint": 2624845708
-              },
-              {
-                "name": "mezz",
-                "fingerprint": 1839722990
-              },
-              {
-                "name": "jei-icon.png",
-                "fingerprint": 2007185424
-              },
-              {
-                "name": "pack.mcmeta",
-                "fingerprint": 1550930300
-              },
-              {
-                "name": "assets",
-                "fingerprint": 224894697
-              }
-            ]
-          },
-          {
-            "id": 4538010,
-            "gameId": 432,
-            "modId": 238222,
-            "isAvailable": true,
-            "displayName": "jei_1.12.2-4.16.1.1003.jar",
-            "fileName": "jei_1.12.2-4.16.1.1003.jar",
-            "releaseType": 2,
-            "fileStatus": 4,
-            "hashes": [
-              {
-                "value": "a4e3b713de6604ee558f30207dd2bde59c9ca21d",
-                "algo": 1
-              },
-              {
-                "value": "83e3c785904fdc1bfc70da0264969799",
-                "algo": 2
-              }
-            ],
-            "fileDate": "2023-05-15T03:15:51.37Z",
-            "fileLength": 653678,
-            "downloadCount": 0,
-            "downloadUrl": "https://edge.forgecdn.net/files/4538/10/jei_1.12.2-4.16.1.1003.jar",
-            "gameVersions": [
-              "1.12.2"
-            ],
-            "sortableGameVersions": [
-              {
-                "gameVersionName": "1.12.2",
-                "gameVersionPadded": "0000000001.0000000012.0000000002",
-                "gameVersion": "1.12.2",
-                "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-                "gameVersionTypeId": 628
-              }
-            ],
-            "dependencies": [],
-            "alternateFileId": 0,
-            "isServerPack": false,
-            "fileFingerprint": 1089162688,
-            "modules": [
-              {
-                "name": "META-INF",
-                "fingerprint": 3133722460
-              },
-              {
-                "name": "mezz",
-                "fingerprint": 3650387934
-              },
-              {
-                "name": "pack.mcmeta",
-                "fingerprint": 1488642189
-              },
-              {
-                "name": "assets",
-                "fingerprint": 2844848637
-              },
-              {
-                "name": "mcmod.info",
-                "fingerprint": 3200559332
-              }
-            ]
-          },
-          {
-            "id": 4593548,
-            "gameId": 432,
-            "modId": 238222,
-            "isAvailable": true,
-            "displayName": "jei-1.18.2-forge-10.2.1.1005.jar",
-            "fileName": "jei-1.18.2-forge-10.2.1.1005.jar",
-            "releaseType": 1,
-            "fileStatus": 4,
-            "hashes": [
-              {
-                "value": "95ac179f935376235eb35fa6a854b5051590dcfe",
-                "algo": 1
-              },
-              {
-                "value": "2ca8e4f60a1f0ff78838a93f5fb8f697",
-                "algo": 2
-              }
-            ],
-            "fileDate": "2023-06-17T18:36:36.233Z",
-            "fileLength": 1085640,
-            "downloadCount": 1200084,
-            "downloadUrl": "https://edge.forgecdn.net/files/4593/548/jei-1.18.2-forge-10.2.1.1005.jar",
-            "gameVersions": [
-              "1.18.2",
-              "Forge"
-            ],
-            "sortableGameVersions": [
-              {
-                "gameVersionName": "1.18.2",
-                "gameVersionPadded": "0000000001.0000000018.0000000002",
-                "gameVersion": "1.18.2",
-                "gameVersionReleaseDate": "2022-02-28T14:23:37.723Z",
-                "gameVersionTypeId": 73250
-              },
-              {
-                "gameVersionName": "Forge",
-                "gameVersionPadded": "0",
-                "gameVersion": "",
-                "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
-                "gameVersionTypeId": 68441
-              }
-            ],
-            "dependencies": [],
-            "alternateFileId": 0,
-            "isServerPack": false,
-            "fileFingerprint": 1251961014,
-            "modules": [
-              {
-                "name": "META-INF",
-                "fingerprint": 1204616540
-              },
-              {
-                "name": "mezz",
-                "fingerprint": 85559634
-              },
-              {
-                "name": "pack.mcmeta",
-                "fingerprint": 1550930300
-              },
-              {
-                "name": "assets",
-                "fingerprint": 843262602
-              },
-              {
-                "name": "jei-icon.png",
-                "fingerprint": 2007185424
-              }
-            ]
-          },
-          {
-            "id": 4767570,
-            "gameId": 432,
-            "modId": 238222,
-            "isAvailable": true,
-            "displayName": "jei-1.20.2-fabric-16.0.0.28.jar",
-            "fileName": "jei-1.20.2-fabric-16.0.0.28.jar",
-            "releaseType": 2,
-            "fileStatus": 4,
-            "hashes": [
-              {
-                "value": "82cf080ff9c78ab1cc34b35a648df28be1dedcfa",
-                "algo": 1
-              },
-              {
-                "value": "3439141ffd9305109f5c5e30b9683594",
-                "algo": 2
-              }
-            ],
-            "fileDate": "2023-09-24T21:26:55.9Z",
-            "fileLength": 1139286,
-            "downloadCount": 0,
-            "downloadUrl": "https://edge.forgecdn.net/files/4767/570/jei-1.20.2-fabric-16.0.0.28.jar",
-            "gameVersions": [
-              "1.20.2",
-              "Fabric"
-            ],
-            "sortableGameVersions": [
-              {
-                "gameVersionName": "1.20.2",
-                "gameVersionPadded": "0000000001.0000000020.0000000002",
-                "gameVersion": "1.20.2",
-                "gameVersionReleaseDate": "2023-09-21T15:25:15.053Z",
-                "gameVersionTypeId": 75125
-              },
-              {
-                "gameVersionName": "Fabric",
-                "gameVersionPadded": "0",
-                "gameVersion": "",
-                "gameVersionReleaseDate": "2022-09-01T00:00:00Z",
-                "gameVersionTypeId": 68441
-              }
-            ],
-            "dependencies": [],
-            "alternateFileId": 0,
-            "isServerPack": false,
-            "fileFingerprint": 4210566496,
-            "modules": [
-              {
-                "name": "META-INF",
-                "fingerprint": 810959722
-              },
-              {
-                "name": "assets",
-                "fingerprint": 3290647580
-              },
-              {
-                "name": "fabric.mod.json",
-                "fingerprint": 1268743853
-              },
-              {
-                "name": "jei-1.20.2-fabric-refmap.json",
-                "fingerprint": 2382742678
-              },
-              {
-                "name": "jei-icon.png",
-                "fingerprint": 2007185424
-              },
-              {
-                "name": "jei.accesswidener",
-                "fingerprint": 623111814
-              },
-              {
-                "name": "jei.mixins.json",
-                "fingerprint": 1365917586
-              },
-              {
-                "name": "mezz",
-                "fingerprint": 4262013102
-              },
-              {
-                "name": "pack.mcmeta",
-                "fingerprint": 2606738017
-              }
-            ]
-          },
-          {
-            "id": 4767571,
-            "gameId": 432,
-            "modId": 238222,
-            "isAvailable": true,
-            "displayName": "jei-1.20.2-forge-16.0.0.28.jar",
-            "fileName": "jei-1.20.2-forge-16.0.0.28.jar",
-            "releaseType": 2,
-            "fileStatus": 4,
-            "hashes": [
-              {
-                "value": "c23c73dce4afd5d06ad954b7e5718771105e225f",
-                "algo": 1
-              },
-              {
-                "value": "acf19c37b9a26eb9e4d35b5f6914f4f6",
-                "algo": 2
-              }
-            ],
-            "fileDate": "2023-09-24T21:27:12.143Z",
-            "fileLength": 1114598,
-            "downloadCount": 0,
-            "downloadUrl": "https://edge.forgecdn.net/files/4767/571/jei-1.20.2-forge-16.0.0.28.jar",
-            "gameVersions": [
-              "1.20.2",
-              "Forge"
-            ],
-            "sortableGameVersions": [
-              {
-                "gameVersionName": "1.20.2",
-                "gameVersionPadded": "0000000001.0000000020.0000000002",
-                "gameVersion": "1.20.2",
-                "gameVersionReleaseDate": "2023-09-21T15:25:15.053Z",
-                "gameVersionTypeId": 75125
-              },
-              {
-                "gameVersionName": "Forge",
-                "gameVersionPadded": "0",
-                "gameVersion": "",
-                "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
-                "gameVersionTypeId": 68441
-              }
-            ],
-            "dependencies": [],
-            "alternateFileId": 0,
-            "isServerPack": false,
-            "fileFingerprint": 3991951331,
-            "modules": [
-              {
-                "name": "META-INF",
-                "fingerprint": 1584716040
-              },
-              {
-                "name": "assets",
-                "fingerprint": 3290647580
-              },
-              {
-                "name": "jei-icon.png",
-                "fingerprint": 2007185424
-              },
-              {
-                "name": "mezz",
-                "fingerprint": 590278275
-              },
-              {
-                "name": "pack.mcmeta",
-                "fingerprint": 2606738017
+                "fileName": "JustEnoughFarmersRecipes-1.18.2-1.0.1.jar",
+                "id": 4357804,
+                "dateCreated": "2023-01-21T15:58:11.233Z",
+                "dateModified": "2023-01-21T15:58:11.233Z",
+                "displayName": "JustEnoughFarmersRecipes-1.18.2-1.0.1.jar",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.18.1",
+                  "Fabric",
+                  "1.18.2",
+                  "1.18"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73250,
+                  68441
+                ],
+                "isEarlyAccessContent": false
               }
             ]
           }
-        ],
-        "latestFilesIndexes": [
-          {
-            "gameVersion": "1.20.2",
-            "fileId": 4767571,
-            "filename": "jei-1.20.2-forge-16.0.0.28.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 75125,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.20.2",
-            "fileId": 4767570,
-            "filename": "jei-1.20.2-fabric-16.0.0.28.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 75125,
-            "modLoader": 4
-          },
-          {
-            "gameVersion": "1.20.1",
-            "fileId": 4712868,
-            "filename": "jei-1.20.1-forge-15.2.0.27.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 75125,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.20.1",
-            "fileId": 4712867,
-            "filename": "jei-1.20.1-fabric-15.2.0.27.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 75125,
-            "modLoader": 4
-          },
-          {
-            "gameVersion": "1.19.2",
-            "fileId": 4712866,
-            "filename": "jei-1.19.2-forge-11.6.0.1018.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 73407,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.19.2",
-            "fileId": 4712863,
-            "filename": "jei-1.19.2-fabric-11.6.0.1018.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 73407,
-            "modLoader": 4
-          },
-          {
-            "gameVersion": "1.19.4",
-            "fileId": 4712556,
-            "filename": "jei-1.19.4-forge-13.1.0.16.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 73407,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.19.4",
-            "fileId": 4712553,
-            "filename": "jei-1.19.4-fabric-13.1.0.16.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 73407,
-            "modLoader": 4
-          },
-          {
-            "gameVersion": "1.18.2",
-            "fileId": 4593548,
-            "filename": "jei-1.18.2-forge-10.2.1.1005.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 73250,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.18.2",
-            "fileId": 4593546,
-            "filename": "jei-1.18.2-fabric-10.2.1.1005.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 73250,
-            "modLoader": 4
-          },
-          {
-            "gameVersion": "1.19.4",
-            "fileId": 4592504,
-            "filename": "jei-1.19.4-forge-13.1.0.15.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 73407,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.20",
-            "fileId": 4581323,
-            "filename": "jei-1.20-forge-14.0.0.11.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 75125,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.20",
-            "fileId": 4581322,
-            "filename": "jei-1.20-fabric-14.0.0.11.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 75125,
-            "modLoader": 4
-          },
-          {
-            "gameVersion": "1.12.2",
-            "fileId": 4538010,
-            "filename": "jei_1.12.2-4.16.1.1003.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 628
-          },
-          {
-            "gameVersion": "1.19.3",
-            "fileId": 4455246,
-            "filename": "jei-1.19.3-forge-12.4.0.22.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 73407,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.19.3",
-            "fileId": 4455245,
-            "filename": "jei-1.19.3-fabric-12.4.0.22.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 73407,
-            "modLoader": 4
-          },
-          {
-            "gameVersion": "1.18.2",
-            "fileId": 4434393,
-            "filename": "jei-1.18.2-forge-10.2.1.1004.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 73250,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.16.5",
-            "fileId": 4371666,
-            "filename": "jei-1.16.5-7.8.0.1009.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 70886,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.16.5",
-            "fileId": 4371662,
-            "filename": "jei-1.16.5-7.8.0.1008.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 70886,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.17.1",
-            "fileId": 4351306,
-            "filename": "jei-1.17.1-8.3.1.1002.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 73242,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.19.2",
-            "fileId": 4087658,
-            "filename": "jei-1.19.2-forge-11.4.0.286.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 73407,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.19.2",
-            "fileId": 4087656,
-            "filename": "jei-1.19.2-fabric-11.4.0.286.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 73407,
-            "modLoader": 4
-          },
-          {
-            "gameVersion": "1.18.1",
-            "fileId": 4060769,
-            "filename": "jei-1.18.1-9.4.1.276.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 73250,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.18.2",
-            "fileId": 4030311,
-            "filename": "jei-1.18.2-forge-10.1.5.272.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 73250,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.18.2",
-            "fileId": 4030310,
-            "filename": "jei-1.18.2-fabric-10.1.5.272.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 73250,
-            "modLoader": 4
-          },
-          {
-            "gameVersion": "1.19.1",
-            "fileId": 3922508,
-            "filename": "jei-1.19.1-forge-11.2.0.244.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 73407,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.19.1",
-            "fileId": 3922506,
-            "filename": "jei-1.19.1-fabric-11.2.0.244.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 73407,
-            "modLoader": 4
-          },
-          {
-            "gameVersion": "1.19",
-            "fileId": 3903068,
-            "filename": "jei-1.19-forge-11.1.1.239.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 73407,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.19",
-            "fileId": 3903066,
-            "filename": "jei-1.19-fabric-11.1.1.239.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 73407,
-            "modLoader": 4
-          },
-          {
-            "gameVersion": "1.18.1",
-            "fileId": 3723162,
-            "filename": "jei-1.18.1-9.4.1.172.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 73250,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.18",
-            "fileId": 3550020,
-            "filename": "jei-1.18-9.0.0.40.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 73250,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.13.2",
-            "fileId": 3272039,
-            "filename": "jei-1.13.2-5.0.0.31.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 55023
-          },
-          {
-            "gameVersion": "1.15.2",
-            "fileId": 3272032,
-            "filename": "jei-1.15.2-6.0.3.16.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 68722
-          },
-          {
-            "gameVersion": "1.16.4",
-            "fileId": 3245003,
-            "filename": "jei-1.16.4-7.6.1.74.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 70886,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.16.3",
-            "fileId": 3104018,
-            "filename": "jei-1.16.3-7.6.0.51.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 70886,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.16.3",
-            "fileId": 3071356,
-            "filename": "jei-1.16.3-7.4.0.40.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 70886,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.16.2",
-            "fileId": 3060935,
-            "filename": "jei-1.16.2-7.3.2.28.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 70886,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.12.2",
-            "fileId": 3040523,
-            "filename": "jei_1.12.2-4.16.1.301.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 628
-          },
-          {
-            "gameVersion": "1.14.4",
-            "fileId": 3039707,
-            "filename": "jei-1.14.4-6.0.1.30.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 64806
-          },
-          {
-            "gameVersion": "1.16.1",
-            "fileId": 3028697,
-            "filename": "jei-1.16.1-7.0.1.10.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 70886,
-            "modLoader": 1
-          },
-          {
-            "gameVersion": "1.15.1",
-            "fileId": 2855456,
-            "filename": "jei-1.15.1-6.0.0.1.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 68722
-          },
-          {
-            "gameVersion": "1.14.3",
-            "fileId": 2738328,
-            "filename": "jei-1.14.3-6.0.0.8.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 64806
-          },
-          {
-            "gameVersion": "1.14.2",
-            "fileId": 2733474,
-            "filename": "jei-1.14.2-6.0.0.3.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 64806
-          },
-          {
-            "gameVersion": "1.10.2",
-            "fileId": 2561516,
-            "filename": "jei_1.10.2-3.14.8.422.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 572
-          },
-          {
-            "gameVersion": "1.12",
-            "fileId": 2485363,
-            "filename": "jei_1.12.2-4.7.11.102.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 628
-          },
-          {
-            "gameVersion": "1.12.1",
-            "fileId": 2485363,
-            "filename": "jei_1.12.2-4.7.11.102.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 628
-          },
-          {
-            "gameVersion": "1.12",
-            "fileId": 2478647,
-            "filename": "jei_1.12.1-4.7.8.95.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 628
-          },
-          {
-            "gameVersion": "1.12.1",
-            "fileId": 2478647,
-            "filename": "jei_1.12.1-4.7.8.95.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 628
-          },
-          {
-            "gameVersion": "1.11.2",
-            "fileId": 2461378,
-            "filename": "jei_1.11.2-4.5.1.296.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 599
-          },
-          {
-            "gameVersion": "1.11.2",
-            "fileId": 2453428,
-            "filename": "jei_1.11.2-4.5.0.294.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 599
-          },
-          {
-            "gameVersion": "1.12",
-            "fileId": 2442204,
-            "filename": "jei_1.12-4.7.0.68.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 628
-          },
-          {
-            "gameVersion": "1.8.9",
-            "fileId": 2431977,
-            "filename": "jei_1.8.9-2.28.18.187.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 4
-          },
-          {
-            "gameVersion": "1.10.2",
-            "fileId": 2428966,
-            "filename": "jei_1.10.2-3.14.7.420.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 572
-          },
-          {
-            "gameVersion": "1.11",
-            "fileId": 2360492,
-            "filename": "jei_1.11-4.1.1.208.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 599
-          },
-          {
-            "gameVersion": "1.11",
-            "fileId": 2350616,
-            "filename": "jei_1.11-4.0.4.199.jar",
-            "releaseType": 3,
-            "gameVersionTypeId": 599
-          },
-          {
-            "gameVersion": "1.9.4",
-            "fileId": 2313650,
-            "filename": "jei_1.9.4-3.6.8.225.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 552
-          },
-          {
-            "gameVersion": "1.10",
-            "fileId": 2310912,
-            "filename": "jei_1.10-3.7.1.219.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 572
-          },
-          {
-            "gameVersion": "1.9.4",
-            "fileId": 2306298,
-            "filename": "jei_1.9.4-3.6.2.211.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 552
-          },
-          {
-            "gameVersion": "1.9",
-            "fileId": 2305823,
-            "filename": "jei_1.9.4-3.4.4.208.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 552
-          },
-          {
-            "gameVersion": "1.9",
-            "fileId": 2304545,
-            "filename": "jei_1.9.4-3.4.3.207.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 552
-          },
-          {
-            "gameVersion": "1.8.9",
-            "fileId": 2292565,
-            "filename": "jei_1.8.9-2.28.14.182.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 4
-          },
-          {
-            "gameVersion": "1.8.8",
-            "fileId": 2275072,
-            "filename": "jei_1.8.9-2.16.2.78.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 4
-          },
-          {
-            "gameVersion": "1.8",
-            "fileId": 2273901,
-            "filename": "jei_1.8-2.14.0.139.jar",
-            "releaseType": 1,
-            "gameVersionTypeId": 4
-          },
-          {
-            "gameVersion": "1.8.8",
-            "fileId": 2270928,
-            "filename": "jei_1.8.8-2.8.3.39.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 4
-          },
-          {
-            "gameVersion": "1.8",
-            "fileId": 2270927,
-            "filename": "jei_1.8-1.8.3.96.jar",
-            "releaseType": 2,
-            "gameVersionTypeId": 4
+        ]
+      },
+      {
+        "id": 521393,
+        "author": {
+          "id": 32851078,
+          "name": "shedaniel",
+          "username": "shedaniel",
+          "isEarlyAccessAuthor": false
+        },
+        "avatarUrl": "https://media.forgecdn.net/avatars/426/650/637657380468740930.png",
+        "categories": [
+          {
+            "id": 421,
+            "dateModified": "2014-05-23T03:21:44.06Z",
+            "gameId": 432,
+            "iconUrl": "https://media.forgecdn.net/avatars/6/36/635351496947765531.png",
+            "name": "API and Library",
+            "slug": "library-api",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/library-api",
+            "classId": 6,
+            "isClass": false,
+            "parentCategoryId": 6
+          },
+          {
+            "id": 423,
+            "dateModified": "2014-05-08T17:42:23.74Z",
+            "gameId": 432,
+            "iconUrl": "https://media.forgecdn.net/avatars/6/38/635351497437388438.png",
+            "name": "Map and Information",
+            "slug": "map-information",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/map-information",
+            "classId": 6,
+            "isClass": false,
+            "parentCategoryId": 6
           }
         ],
-        "latestEarlyAccessFilesIndexes": [],
-        "dateCreated": "2015-11-23T22:55:58.84Z",
-        "dateModified": "2023-09-24T21:33:09.607Z",
-        "dateReleased": "2023-09-24T21:27:12.143Z",
-        "allowModDistribution": true,
-        "gamePopularityRank": 1,
-        "isAvailable": true,
-        "thumbsUpCount": 1
+        "class": {
+          "id": 6,
+          "dateModified": "2023-08-05T12:43:53.26Z",
+          "gameId": 432,
+          "iconUrl": "https://media.forgecdn.net/avatars/52/101/636111139584399357.png",
+          "name": "Mods",
+          "slug": "mc-mods",
+          "url": "https://www.curseforge.com/minecraft/mc-mods",
+          "classId": null,
+          "displayIndex": 1,
+          "isClass": true,
+          "parentCategoryId": null
+        },
+        "creationDate": 1630141246,
+        "downloads": 5159945,
+        "gameVersion": "1.19.3",
+        "name": "REI Plugin Compatibilities (REIPC)",
+        "slug": "roughly-enough-items-hacks",
+        "summary": "Support for JEI plugins for REI",
+        "updateDate": 1699191827,
+        "releaseDate": 1699014637,
+        "fileSize": 460494,
+        "isClientCompatible": true,
+        "latestFileDetails": {
+          "id": 4837450,
+          "gameVersions": [
+            "Java 8",
+            "Forge",
+            "Java 17",
+            "1.19.3"
+          ],
+          "gameVersionTypeIds": [
+            73407
+          ]
+        },
+        "hasEarlyAccessFiles": false,
+        "hasLocalization": false,
+        "status": 4,
+        "websiteRecentFiles": [
+          {
+            "gameVersion": {
+              "id": 75125,
+              "name": "Minecraft 1.20"
+            },
+            "files": [
+              {
+                "fileName": "REIPluginCompatibilities-forge-12.0.93.jar",
+                "id": 4837449,
+                "dateCreated": "2023-11-03T12:30:32.767Z",
+                "dateModified": "2023-11-03T12:37:34.85Z",
+                "displayName": "[Forge 1.20.1] v12.0.93",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.20.1",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  75125,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          },
+          {
+            "gameVersion": {
+              "id": 73407,
+              "name": "Minecraft 1.19"
+            },
+            "files": [
+              {
+                "fileName": "REIPluginCompatibilities-forge-11.0.53.jar",
+                "id": 4557409,
+                "dateCreated": "2023-05-29T12:42:32.647Z",
+                "dateModified": "2023-05-29T12:42:32.647Z",
+                "displayName": "[Forge 1.19.4] v11.0.53",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.19.3",
+                  "1.19.4",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "REIPluginCompatibilities-forge-11.0.92.jar",
+                "id": 4837450,
+                "dateCreated": "2023-11-03T12:30:37.773Z",
+                "dateModified": "2023-11-05T13:43:47.123Z",
+                "displayName": "[Forge 1.19.4] v11.0.92",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.19.3",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "REIPluginCompatibilities-forge-9.0.90.jar",
+                "id": 4837440,
+                "dateCreated": "2023-11-03T12:28:07.777Z",
+                "dateModified": "2023-11-05T13:42:31.887Z",
+                "displayName": "[Forge 1.19-1.19.2] v9.0.90",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.19.2",
+                  "Forge",
+                  "1.19.1",
+                  "1.19"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          },
+          {
+            "gameVersion": {
+              "id": 73250,
+              "name": "Minecraft 1.18"
+            },
+            "files": [
+              {
+                "fileName": "REIPluginCompatibilities-forge-8.0.89.jar",
+                "id": 4837418,
+                "dateCreated": "2023-11-03T12:14:18.06Z",
+                "dateModified": "2023-11-05T13:43:02.453Z",
+                "displayName": "[Forge 1.18.2] v8.0.89",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.18.1",
+                  "1.18.2",
+                  "Forge",
+                  "1.18"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73250,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "RoughlyEnoughItems-jei-internals-workaround-7.4.456.jar",
+                "id": 3768219,
+                "dateCreated": "2022-04-25T09:07:46.543Z",
+                "dateModified": "2022-04-25T09:07:46.543Z",
+                "displayName": "[Forge 1.18(.1)] v7.4.456",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.18.1",
+                  "Forge",
+                  "1.18"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73250,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "RoughlyEnoughItems-jei-internals-workaround-7.0.343.jar",
+                "id": 3545881,
+                "dateCreated": "2021-12-02T23:09:24.59Z",
+                "dateModified": "2021-12-02T23:09:24.59Z",
+                "displayName": "[Forge 1.18] v7.0.343",
+                "releaseType": 2,
+                "gameVersions": [
+                  "Forge",
+                  "1.18"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  68441,
+                  73250
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 580555,
+        "author": {
+          "id": 100436320,
+          "name": "EmilyPloszaj",
+          "username": "EmilyPloszaj",
+          "isEarlyAccessAuthor": false
+        },
+        "avatarUrl": "https://media.forgecdn.net/avatars/545/351/637878590194850929.png",
+        "categories": [
+          {
+            "id": 421,
+            "dateModified": "2014-05-23T03:21:44.06Z",
+            "gameId": 432,
+            "iconUrl": "https://media.forgecdn.net/avatars/6/36/635351496947765531.png",
+            "name": "API and Library",
+            "slug": "library-api",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/library-api",
+            "classId": 6,
+            "isClass": false,
+            "parentCategoryId": 6
+          },
+          {
+            "id": 423,
+            "dateModified": "2014-05-08T17:42:23.74Z",
+            "gameId": 432,
+            "iconUrl": "https://media.forgecdn.net/avatars/6/38/635351497437388438.png",
+            "name": "Map and Information",
+            "slug": "map-information",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/map-information",
+            "classId": 6,
+            "isClass": false,
+            "parentCategoryId": 6
+          }
+        ],
+        "class": {
+          "id": 6,
+          "dateModified": "2023-08-05T12:43:53.26Z",
+          "gameId": 432,
+          "iconUrl": "https://media.forgecdn.net/avatars/52/101/636111139584399357.png",
+          "name": "Mods",
+          "slug": "mc-mods",
+          "url": "https://www.curseforge.com/minecraft/mc-mods",
+          "classId": null,
+          "displayIndex": 1,
+          "isClass": true,
+          "parentCategoryId": null
+        },
+        "creationDate": 1644978393,
+        "downloads": 1082519,
+        "gameVersion": "1.20.2",
+        "name": "EMI",
+        "slug": "emi",
+        "summary": "Featureful and accessible modern item and recipe viewer with JEI compatibility",
+        "updateDate": 1699236297,
+        "releaseDate": 1699235985,
+        "fileSize": 971305,
+        "isClientCompatible": true,
+        "latestFileDetails": {
+          "id": 4844250,
+          "gameVersions": [
+            "Forge",
+            "1.20.2"
+          ],
+          "gameVersionTypeIds": [
+            75125
+          ]
+        },
+        "hasEarlyAccessFiles": false,
+        "hasLocalization": false,
+        "status": 4,
+        "websiteRecentFiles": [
+          {
+            "gameVersion": {
+              "id": 75125,
+              "name": "Minecraft 1.20"
+            },
+            "files": [
+              {
+                "fileName": "emi-1.0.24+1.20.2+forge.jar",
+                "id": 4844250,
+                "dateCreated": "2023-11-06T01:59:45.46Z",
+                "dateModified": "2023-11-06T02:03:45.313Z",
+                "displayName": "emi-1.0.24+1.20.2+forge",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.20.2",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  75125,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "emi-1.0.24+1.20.2+fabric.jar",
+                "id": 4844249,
+                "dateCreated": "2023-11-06T01:59:43.53Z",
+                "dateModified": "2023-11-06T02:04:57.063Z",
+                "displayName": "emi-1.0.24+1.20.2+fabric",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.20.2",
+                  "Fabric",
+                  "Quilt"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  75125,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "emi-1.0.24+1.20.1+forge.jar",
+                "id": 4844242,
+                "dateCreated": "2023-11-06T01:57:44.933Z",
+                "dateModified": "2023-11-06T02:03:07.873Z",
+                "displayName": "emi-1.0.24+1.20.1+forge",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.20.1",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  75125,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          },
+          {
+            "gameVersion": {
+              "id": 73407,
+              "name": "Minecraft 1.19"
+            },
+            "files": [
+              {
+                "fileName": "emi-1.0.24+1.19.4+forge.jar",
+                "id": 4844237,
+                "dateCreated": "2023-11-06T01:56:37.087Z",
+                "dateModified": "2023-11-06T02:01:05.557Z",
+                "displayName": "emi-1.0.24+1.19.4+forge",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.19.4",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "emi-1.0.24+1.19.4+fabric.jar",
+                "id": 4844236,
+                "dateCreated": "2023-11-06T01:56:36.463Z",
+                "dateModified": "2023-11-06T02:01:03.333Z",
+                "displayName": "emi-1.0.24+1.19.4+fabric",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.19.4",
+                  "Fabric",
+                  "Quilt"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "emi-1.0.24+1.19.3+forge.jar",
+                "id": 4844248,
+                "dateCreated": "2023-11-06T01:59:29.667Z",
+                "dateModified": "2023-11-06T02:03:47.733Z",
+                "displayName": "emi-1.0.24+1.19.3+forge",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.19.3",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          },
+          {
+            "gameVersion": {
+              "id": 73250,
+              "name": "Minecraft 1.18"
+            },
+            "files": [
+              {
+                "fileName": "emi-0.7.3+1.18.2.jar",
+                "id": 4466710,
+                "dateCreated": "2023-03-31T03:33:11.277Z",
+                "dateModified": "2023-03-31T03:33:11.277Z",
+                "displayName": "emi-0.7.3+1.18.2",
+                "releaseType": 1,
+                "gameVersions": [
+                  "Fabric",
+                  "1.18.2",
+                  "Quilt"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  68441,
+                  73250
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 310111,
+        "author": {
+          "id": 32851078,
+          "name": "shedaniel",
+          "username": "shedaniel",
+          "isEarlyAccessAuthor": false
+        },
+        "avatarUrl": "https://media.forgecdn.net/avatars/282/25/637287701215436754.png",
+        "categories": [
+          {
+            "id": 423,
+            "dateModified": "2014-05-08T17:42:23.74Z",
+            "gameId": 432,
+            "iconUrl": "https://media.forgecdn.net/avatars/6/38/635351497437388438.png",
+            "name": "Map and Information",
+            "slug": "map-information",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/map-information",
+            "classId": 6,
+            "isClass": false,
+            "parentCategoryId": 6
+          },
+          {
+            "id": 421,
+            "dateModified": "2014-05-23T03:21:44.06Z",
+            "gameId": 432,
+            "iconUrl": "https://media.forgecdn.net/avatars/6/36/635351496947765531.png",
+            "name": "API and Library",
+            "slug": "library-api",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/library-api",
+            "classId": 6,
+            "isClass": false,
+            "parentCategoryId": 6
+          }
+        ],
+        "class": {
+          "id": 6,
+          "dateModified": "2023-08-05T12:43:53.26Z",
+          "gameId": 432,
+          "iconUrl": "https://media.forgecdn.net/avatars/52/101/636111139584399357.png",
+          "name": "Mods",
+          "slug": "mc-mods",
+          "url": "https://www.curseforge.com/minecraft/mc-mods",
+          "classId": null,
+          "displayIndex": 1,
+          "isClass": true,
+          "parentCategoryId": null
+        },
+        "creationDate": 1546173809,
+        "downloads": 27233243,
+        "gameVersion": "1.20.2",
+        "name": "Roughly Enough Items Fabric/Forge (REI)",
+        "slug": "roughly-enough-items",
+        "summary": "Clean and Customizable. An easy way to browse recipes. Alternative to JEI Just Enough Items.",
+        "updateDate": 1700338054,
+        "releaseDate": 1700337257,
+        "fileSize": 2276678,
+        "isClientCompatible": true,
+        "latestFileDetails": {
+          "id": 4878207,
+          "gameVersions": [
+            "Java 8",
+            "Fabric",
+            "Java 17",
+            "1.20.2-Snapshot",
+            "1.20.2"
+          ],
+          "gameVersionTypeIds": [
+            75125,
+            75125
+          ]
+        },
+        "hasEarlyAccessFiles": false,
+        "hasLocalization": false,
+        "status": 4,
+        "websiteRecentFiles": [
+          {
+            "gameVersion": {
+              "id": 75125,
+              "name": "Minecraft 1.20"
+            },
+            "files": [
+              {
+                "fileName": "RoughlyEnoughItems-13.0.678.jar",
+                "id": 4878207,
+                "dateCreated": "2023-11-18T19:54:17.69Z",
+                "dateModified": "2023-11-18T20:07:34.467Z",
+                "displayName": "[Fabric 1.20.2] v13.0.678",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.20.2",
+                  "1.20.2-Snapshot",
+                  "Fabric"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  75125,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "RoughlyEnoughItems-13.0.678.jar",
+                "id": 4878204,
+                "dateCreated": "2023-11-18T19:53:57.203Z",
+                "dateModified": "2023-11-18T20:02:39.05Z",
+                "displayName": "[NeoForge 1.20.2] v13.0.678",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.20.2",
+                  "NeoForge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  75125,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "RoughlyEnoughItems-13.0.678.jar",
+                "id": 4878200,
+                "dateCreated": "2023-11-18T19:53:34.623Z",
+                "dateModified": "2023-11-18T20:02:34.373Z",
+                "displayName": "[Forge 1.20.2] v13.0.678",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.20.2",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  75125,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          },
+          {
+            "gameVersion": {
+              "id": 73407,
+              "name": "Minecraft 1.19"
+            },
+            "files": [
+              {
+                "fileName": "RoughlyEnoughItems-11.0.673.jar",
+                "id": 4834392,
+                "dateCreated": "2023-11-02T08:07:31.037Z",
+                "dateModified": "2023-11-02T08:12:26.937Z",
+                "displayName": "[Forge 1.19.4] v11.0.673",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.19.4",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "RoughlyEnoughItems-11.0.673.jar",
+                "id": 4834391,
+                "dateCreated": "2023-11-02T08:07:23.267Z",
+                "dateModified": "2023-11-02T08:12:24.627Z",
+                "displayName": "[Fabric 1.19.4] v11.0.673",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.19.4",
+                  "Fabric",
+                  "1.19-Snapshot"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "RoughlyEnoughItems-10.0.646.jar",
+                "id": 4732051,
+                "dateCreated": "2023-09-01T09:01:00.797Z",
+                "dateModified": "2023-09-01T09:03:22.003Z",
+                "displayName": "[Forge 1.19.3] v10.0.646",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.19.3",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          },
+          {
+            "gameVersion": {
+              "id": 73250,
+              "name": "Minecraft 1.18"
+            },
+            "files": [
+              {
+                "fileName": "RoughlyEnoughItems-8.3.667.jar",
+                "id": 4812880,
+                "dateCreated": "2023-10-23T13:59:03.437Z",
+                "dateModified": "2023-10-23T14:03:50.91Z",
+                "displayName": "[Forge 1.18.2] v8.3.667",
+                "releaseType": 2,
+                "gameVersions": [
+                  "1.18.2",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73250,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "RoughlyEnoughItems-8.3.667.jar",
+                "id": 4812879,
+                "dateCreated": "2023-10-23T13:58:54.933Z",
+                "dateModified": "2023-10-23T14:03:58.633Z",
+                "displayName": "[Fabric 1.18.2] v8.3.667",
+                "releaseType": 1,
+                "gameVersions": [
+                  "Fabric",
+                  "1.18.2",
+                  "1.18-Snapshot"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  68441,
+                  73250
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "RoughlyEnoughItems-7.4.456.jar",
+                "id": 3768218,
+                "dateCreated": "2022-04-25T09:07:45.09Z",
+                "dateModified": "2022-04-25T09:07:45.09Z",
+                "displayName": "[Fabric 1.18(.1)] v7.4.456",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.18.1",
+                  "Fabric",
+                  "1.18",
+                  "1.18-Snapshot"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73250,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 444941,
+        "author": {
+          "id": 28095189,
+          "name": "MelanX",
+          "username": "MelanX",
+          "isEarlyAccessAuthor": false
+        },
+        "avatarUrl": "https://media.forgecdn.net/avatars/499/180/637815670928581576.png",
+        "categories": [
+          {
+            "id": 426,
+            "dateModified": "2014-05-08T17:09:48.63Z",
+            "gameId": 432,
+            "iconUrl": "https://media.forgecdn.net/avatars/5/998/635351477886290676.png",
+            "name": "Addons",
+            "slug": "mc-addons",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/mc-addons",
+            "classId": 6,
+            "isClass": false,
+            "parentCategoryId": 6
+          },
+          {
+            "id": 421,
+            "dateModified": "2014-05-23T03:21:44.06Z",
+            "gameId": 432,
+            "iconUrl": "https://media.forgecdn.net/avatars/6/36/635351496947765531.png",
+            "name": "API and Library",
+            "slug": "library-api",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/library-api",
+            "classId": 6,
+            "isClass": false,
+            "parentCategoryId": 6
+          },
+          {
+            "id": 423,
+            "dateModified": "2014-05-08T17:42:23.74Z",
+            "gameId": 432,
+            "iconUrl": "https://media.forgecdn.net/avatars/6/38/635351497437388438.png",
+            "name": "Map and Information",
+            "slug": "map-information",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/map-information",
+            "classId": 6,
+            "isClass": false,
+            "parentCategoryId": 6
+          }
+        ],
+        "class": {
+          "id": 6,
+          "dateModified": "2023-08-05T12:43:53.26Z",
+          "gameId": 432,
+          "iconUrl": "https://media.forgecdn.net/avatars/52/101/636111139584399357.png",
+          "name": "Mods",
+          "slug": "mc-mods",
+          "url": "https://www.curseforge.com/minecraft/mc-mods",
+          "classId": null,
+          "displayIndex": 1,
+          "isClass": true,
+          "parentCategoryId": null
+        },
+        "creationDate": 1612881835,
+        "downloads": 453495,
+        "gameVersion": "1.20.1",
+        "name": "Just Enough Advancements (JEA)",
+        "slug": "jea",
+        "summary": "An addon for JEI which let you search for advancements. This is pronounced like \"yeah\".",
+        "updateDate": 1688826585,
+        "releaseDate": 1688826047,
+        "fileSize": 37823,
+        "isClientCompatible": true,
+        "latestFileDetails": {
+          "id": 4631663,
+          "gameVersions": [
+            "Forge",
+            "Client",
+            "Server",
+            "1.20.1"
+          ],
+          "gameVersionTypeIds": [
+            75125
+          ]
+        },
+        "hasEarlyAccessFiles": false,
+        "hasLocalization": false,
+        "status": 4,
+        "websiteRecentFiles": [
+          {
+            "gameVersion": {
+              "id": 75125,
+              "name": "Minecraft 1.20"
+            },
+            "files": [
+              {
+                "fileName": "JustEnoughAdvancements-1.20.1-5.0.1.jar",
+                "id": 4631663,
+                "dateCreated": "2023-07-08T14:20:47.647Z",
+                "dateModified": "2023-07-08T14:20:47.647Z",
+                "displayName": "JustEnoughAdvancements-1.20.1-5.0.1.jar",
+                "releaseType": 1,
+                "gameVersions": [
+                  "Client",
+                  "1.20.1",
+                  "Forge",
+                  "Server"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  75208,
+                  75125,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          },
+          {
+            "gameVersion": {
+              "id": 73407,
+              "name": "Minecraft 1.19"
+            },
+            "files": [
+              {
+                "fileName": "JustEnoughAdvancements-1.19.4-4.2.0.jar",
+                "id": 4503435,
+                "dateCreated": "2023-04-23T10:56:45.593Z",
+                "dateModified": "2023-04-23T10:56:45.593Z",
+                "displayName": "JustEnoughAdvancements-1.19.4-4.2.0.jar",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.19.4",
+                  "Client",
+                  "Forge",
+                  "Server"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  75208,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "JustEnoughAdvancements-1.19.3-4.1.0.jar",
+                "id": 4424689,
+                "dateCreated": "2023-03-06T15:07:00.463Z",
+                "dateModified": "2023-03-06T15:07:00.463Z",
+                "displayName": "JustEnoughAdvancements-1.19.3-4.1.0.jar",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.19.3",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "JustEnoughAdvancements-1.19-4.0.2.jar",
+                "id": 3874017,
+                "dateCreated": "2022-07-13T18:54:29.22Z",
+                "dateModified": "2022-07-13T18:54:29.22Z",
+                "displayName": "JustEnoughAdvancements-1.19-4.0.2.jar",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.19.2",
+                  "Forge",
+                  "1.19.1",
+                  "1.19"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73407,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          },
+          {
+            "gameVersion": {
+              "id": 73250,
+              "name": "Minecraft 1.18"
+            },
+            "files": [
+              {
+                "fileName": "JustEnoughAdvancements-1.18.2-3.2.0.jar",
+                "id": 3680036,
+                "dateCreated": "2022-03-06T21:42:40.79Z",
+                "dateModified": "2022-03-06T21:42:40.79Z",
+                "displayName": "JustEnoughAdvancements-1.18.2-3.2.0.jar",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.18.2",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73250,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              },
+              {
+                "fileName": "JustEnoughAdvancements-1.18.1-3.1.0.jar",
+                "id": 3576063,
+                "dateCreated": "2021-12-21T22:45:33.43Z",
+                "dateModified": "2021-12-21T22:45:33.43Z",
+                "displayName": "JustEnoughAdvancements-1.18.1-3.1.0.jar",
+                "releaseType": 1,
+                "gameVersions": [
+                  "1.18.1",
+                  "Forge"
+                ],
+                "earlyAccessEndDate": null,
+                "gameVersionTypeIds": [
+                  73250,
+                  68441
+                ],
+                "isEarlyAccessContent": false
+              }
+            ]
+          }
+        ]
       }
     ],
     "pagination": {
       "index": 0,
       "pageSize": 50,
-      "resultCount": 1,
-      "totalCount": 1
+      "totalCount": 6
     }
   };
+
   mods.value = resp.data as Mod[];
 });
 </script>

@@ -51,7 +51,7 @@ const buttonsDisplay = computed(() => {
     </div>
     <div class="mod-info">
       <div class="name">
-        {{ name }}
+        {{name}}
       </div>
       <div class="slug">
         @{{slug}}

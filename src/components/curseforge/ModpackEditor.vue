@@ -2,11 +2,12 @@
 import {computed, onMounted, ref} from 'vue';
 import Field from '../avc/Field.vue';
 import Row from '../avc/Row.vue';
-import SelectDropdown from './SelectDropdown.vue';
-import {useModpackStore} from '../../stores/ModpackStore';
+import SelectDropdown, {SelectDropdownItem} from './SelectDropdown.vue';
+import {useManagerStore} from '../../stores/ManagerStore';
 import {useSettingStore} from '../../stores/SettingStore';
 import {storeToRefs} from 'pinia';
 import Modpack from '../../domains/Modpack';
+import {useCurseForgeStore} from '../../stores/CurseForgeStore';
 
 interface Props {
   modpackId?: string;
@@ -21,10 +22,8 @@ const emit = defineEmits<{
   (e: "close"): void,
 }>();
 
-const settingStore = useSettingStore();
-const {gameVersionOptions, modLoaderOptions} = storeToRefs(settingStore);
-
-const modpackStore = useModpackStore();
+const mgrStore = useManagerStore();
+const cfStore = useCurseForgeStore();
 
 const id = ref<string>("");
 const name = ref<string>("");
@@ -45,7 +44,7 @@ const modpack = computed(() => ({
 onMounted(() => {
   if (props.modpackId != undefined) {
     id.value = props.modpackId;
-    const mp = modpackStore.modpacks.get(id.value);
+    const mp = mgrStore.getModpackById(id.value);
     if (mp != undefined) {
       idEditable.value = false;
       name.value = mp.name;
@@ -63,6 +62,27 @@ onMounted(() => {
   version.value = "0.1.0";
   gameVersion.value = "1.20.1";
   modLoader.value = "forge";
+});
+
+const gameVersionItems = computed<SelectDropdownItem[]>(() =>
+  mgrStore.gameVersions.map((version) => ({
+    value: version,
+    text: `Minecraft ${version}`,
+  } as SelectDropdownItem))
+);
+
+const modLoaderItems = computed<SelectDropdownItem[]>(() => {
+  const items: SelectDropdownItem[] = [];
+  mgrStore.modLoaders.forEach((slug) => {
+    const modLoader = cfStore.getModLoaderBySlug(slug);
+    if (modLoader != null) {
+      items.push({
+        value: slug,
+        text: modLoader.loader,
+      } as SelectDropdownItem);
+    }
+  });
+  return items;
 });
 </script>
 
@@ -82,13 +102,13 @@ onMounted(() => {
     
     <select-dropdown
       name="游戏版本："
-      :options="gameVersionOptions"
+      :items="gameVersionItems"
       v-model="gameVersion"
     />
     
     <select-dropdown
       name="加载器："
-      :options="modLoaderOptions"
+      :items="modLoaderItems"
       v-model="modLoader"
     />
 

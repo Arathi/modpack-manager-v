@@ -1,17 +1,22 @@
 <script setup lang="ts">
 import {ref, computed} from 'vue';
 
+export interface SelectDropdownItem {
+  value: number|string;
+  text: string;
+}
+
 const props = withDefaults(defineProps<{
   name: string;
-  options: any;
-  modelValue: string;
-  labelWidth?: string;
+  items: SelectDropdownItem[];
+  modelValue: number|string;
+  labelWidth?: number;
 }>(), {
-  labelWidth: "115px",
+  labelWidth: 115,
 });
 
 const emit = defineEmits<{
-  (e: 'update:modelValue', value: string): void
+  (e: 'update:modelValue', value: number|string): void
 }>();
 
 const open = ref(false);
@@ -24,10 +29,11 @@ const dropdownClassNames = computed(() => {
   return classNames.join(" ");
 });
 
-const selectedText = computed(() => {
-  if (props.modelValue == undefined) return "";
-  return props.options[props.modelValue];
-});
+const selectedItem = computed(() => props.items.find((item) => item.value === props.modelValue));
+const labelWidthPx = computed(() => `${props.labelWidth}px`);
+</script>
+
+<script lang="ts">
 </script>
 
 <template>
@@ -35,17 +41,17 @@ const selectedText = computed(() => {
     <span class="label">{{ name }}</span>
     <div :class="dropdownClassNames" @click="open = !open">
       <p class="dropdown-selected-item">
-        <span>{{ selectedText }}</span>
+        <span>{{selectedItem?.text}}</span>
         <svg><use href="/images/sprite.svg#arrow"></use></svg>
       </p>
       <div class="dropdown-list-wrapper">
         <ul class="dropdown-list">
-          <li v-for="key in Object.keys(options)"
-            :key="key"
-            :class="key == modelValue ? 'is-active' : ''"
-            @click="() => emit('update:modelValue', key)"
+          <li v-for="item in items"
+            :key="item.value"
+            :class="item.value === modelValue ? 'is-active' : ''"
+            @click="() => emit('update:modelValue', item.value)"
           >
-            {{ options[key] }}
+            {{item.text}}
           </li>
         </ul>
       </div>
@@ -59,9 +65,8 @@ const selectedText = computed(() => {
   margin-bottom: 8px;
 
   .label {
-    width: v-bind(labelWidth);
+    width: v-bind(labelWidthPx);
     user-select: none;
   }
 }
-
 </style>
